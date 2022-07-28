@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  remote_user: fati
+  become: true
+  tasks:
+
+  - name: s assurer que apache2 intalle 
+    apt:
+      name: apache2
+      state: present
+  - name: s assuer que apache2 est active
+    service:
+      name: apache2
+      state: started
+      enabled: true
