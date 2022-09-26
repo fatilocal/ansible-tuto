@@ -1,1 +1,1 @@
-192.168.150.1  ansible_ssh_user=test
+10.0.200.140  ansible_ssh_user=test
